@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Quest Choose Avatar</title>
+    
+    <!-- Linking to Google Fonts for custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rampart+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    
+    <!-- Linking to external CSS file for styling -->
+    <link rel="stylesheet" href="CSS/quiz.css">
+</head>
+<body>
+
+<header>
+    <!-- Navigation bar section with grey background -->
+    <nav class="grey-nav">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <!-- Default avatar image (base64 encoded) -->
+                <img class="avatar" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Selected avatar">
+                <!-- Welcome message (left empty for now) -->
+                <div class="welcome"></div>
+            </div>
+            <div class="nav-right">
+                <!-- Dynamic date-time display -->
+                <div class="date-time"></div>
+                <!-- Display for number of quizzes completed -->
+                <div class="quiz-compl-no"></div>
+                <!-- Display for points total -->
+                <div class="points-no"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Logo container for displaying the Quiz Quest logo -->
+    <div class="logo-container">
+        <img class="logo-a" src="CSS/images/qqlogo.png" alt="quiz quest logo">
+    </div>
+</header>
+    
+<main>
+    <!-- Section for mobile avatar header with a next button -->
+    <div class="mob-av-head">
+        <div class="mob-av-heading">
+            <h1>Choose an Avatar and then click: </h1>
+        </div>
+        <div class="mob-av-next">
+            <!-- Link to proceed to the main quiz menu -->
+            <a href="quiz_main_menu.html" class="next-button-mob">Next ></a>
+        </div>
+    </div>
+
+    <!-- Section for desktop avatar header with a next button -->
+    <div class="avatar-headings">
+        <div class="av-head-left"><h1 class="avatar-h1">Choose An Avatar:</h1></div>
+        <div class="av-head-right"><h2>Then Click Next:</h2>
+            <!-- Link to proceed to the main quiz menu -->
+            <a href="quiz_main_menu.html" class="next-button">Next ></a>
+        </div>
+    </div>
+    
+    <!-- Avatar selection container -->
+    <div class="mob-av-container">
+        <!-- First row of avatar images -->
+        <div class="avatar-row1">
+            <div class="av-cont-1"> <img src="CSS/images/avatar-alien.png" alt="alien avatar character"></div>
+            <div class="av-cont-2"> <img src="CSS/images/avatar-ast-moon.png" alt="moon avatar character"></div>
+            <div class="av-cont-3"> <img src="CSS/images/avatar-ast.png" alt="asteriod avatar character"></div>
+            <div class="av-cont-4"> <img src="CSS/images/avatar-cat.png" alt="cat avatar character"></div>
+            <div class="av-cont-5"> <img src="CSS/images/avatar-dog.png" alt="dog avatar character"></div>
+        </div>
+
+        <!-- Second row of avatar images -->
+        <div class="avatar-row2">
+            <div class="av-cont-6"> <img src="CSS/images/avatar-monkey.png" alt="monkey avatar character"></div>
+            <div class="av-cont-7"> <img src="CSS/images/avatar-pencil.png" alt="pencil avatar character"></div>
+            <div class="av-cont-8"> <img src="CSS/images/avatar-rainbow.png" alt="rainbow avatar character"></div>
+            <div class="av-cont-9"> <img src="CSS/images/avatar-robot.png" alt="robot avatar character"></div>
+            <div class="av-cont-10"> <img src="CSS/images/avatar-sun.png" alt="sun avatar character"></div>
+        </div>
+    </div>
+</main>
+
+<!-- Linking external JavaScript files for avatar selection logic and other features -->
+<script src="JS/avatar.js"></script>
+<script src="JS/global.js"></script>
+<script src="JS/cookies.js"></script>
+<script src="JS/color.js"></script>
+
+</body>
+</html>

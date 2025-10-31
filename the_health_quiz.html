@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Quest Health Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rampart+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/quiz.css">
+</head>
+<body class="hide-starry-mobile">
+<header>
+    <nav class="grey-nav">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <img class="avatar" src="" alt="Selected avatar">
+                <div class="welcome"></div>
+            </div>
+            <div class="nav-right">
+                <div class="date-time"></div>
+                <div class="quiz-compl-no"></div>
+                <div class="points-no">Score: 0 / 30</div>
+            </div>
+        </div>
+    </nav>
+    <div class="logo-container-left">
+        <img class="logo-c" src="CSS/images/qqlogo.png" alt="quiz quest logo">
+        <div class="starry-container">
+            <div class="starry-par"><h1>Complete all quizzes to wake up Starry!</h1></div>
+            <div class="starry-image"><img src="CSS/images/sleeping_starry.png" class="floating-starry" alt="Starry quiz cartoon character sleeping">
+            </div>
+        </div>
+    </div>
+</header>
+    <main class="main-menu-outer">
+        <div class="quiz-container-background">
+            <div id="quiz-container" data-quiz-name="health" data-question-id="1">
+                <div class="question" id="question1">
+                    <div class="quiz-questions">
+                        <h1>Health & Wellbeing</h1>
+                        <p>Question 1: What should you do before eating?</p>
+                        <div class="quiz-img-wrap"><img src="CSS/images/health-img.png" alt="health and wellbeing icon"></div>
+                    </div>
+                    <div class="quiz-answers">
+                        <button class="answer-btn" data-letter="A" onclick="selectAnswer(this, 'A')">A: Brush your hair</button>
+                        <button class="answer-btn" data-letter="B" onclick="selectAnswer(this, 'B')">B: Wash your hands</button>
+                        <button class="answer-btn" data-letter="C" onclick="selectAnswer(this, 'C')">C: Tie your shoes</button>
+                        <button class="answer-btn" data-letter="D" onclick="selectAnswer(this, 'D')">D: Play with your pet</button>
+                        <a href="the_health_q2.html" class="next-btn">Next</a>
+
+                        
+
+                    </div>
+                </div>           
+            </div>
+            <div class="progress-bar">
+                <div class="progress-block" id="progress-1"></div>
+                <div class="progress-block" id="progress-2"></div>
+                <div class="progress-block" id="progress-3"></div>
+                <div class="progress-block" id="progress-4"></div>
+                <div class="progress-block" id="progress-5"></div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="JS/avatar.js"></script>
+    <script src="JS/global.js"></script>
+    <script src="JS/cookies.js"></script>
+    <script src="JS/color.js"></script>
+    <script src="JS/quiz.js"></script>
+    
+</body>
+</html>

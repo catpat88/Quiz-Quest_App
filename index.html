@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Quest</title>
+    
+    <!-- Linking to Google Fonts for custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rampart+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    
+    <!-- Linking to external CSS file for styling -->
+    <link rel="stylesheet" href="CSS/quiz.css">
+</head>
+<body>
+<header>
+    <!-- Navigation bar section -->
+    <nav>
+        <div class="nav-bar">
+            <div class="nav-left">
+                <!-- Avatar section for user -->
+                <div class="avatar"></div>
+                <!-- Welcome message section -->
+                <div class="welcome"></div>
+            </div>
+            <div class="nav-right">
+                <!-- Date and time display -->
+                <div class="date-time"></div>
+                <!-- Number of completed quizzes -->
+                <div class="quiz-compl-no"></div>
+                <!-- Total points display -->
+                <div class="points-no"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Logo container for the quiz logo -->
+    <div class="logo-container">
+        <img class="logo" src="CSS/images/qqlogo.png" alt="quiz quest logo">
+    </div>
+</header>
+    
+<main>
+    <!-- Stars container for starry animation or effect -->
+    <div class="stars">
+        <span class="starss star2"></span>
+        <span class="star star3"></span>
+        <span class="star star5"></span>
+        <span class="starss star6"></span>
+    </div>
+
+    <!-- Landing page form where user enters details to start the quiz -->
+    <div class="landing-container">
+        <form class="landing-container" id="signupForm">
+            <!-- Label and input for first name -->
+            <label class="land-label" for="firstName">Please enter your first name</label>
+            <input class="land-input" type="text" name="name" id="firstName" required>
+    
+            <!-- Label and input for email address -->
+            <label class="land-label" for="emailAdd">Please enter your email</label>
+            <input class="land-input" type="email" name="email" id="emailAdd" required>
+    
+            <!-- Label and options for color selection -->
+            <label class="land-label">Please choose a colour</label>
+            <div class="color-options">
+                <!-- Different color circles for selection -->
+                <div class="color-circle" data-color="#C4B5FD" style="background-color: #C4B5FD;"></div>
+                <div class="color-circle" data-color="#A7F3D0" style="background-color: #A7F3D0;"></div>
+                <div class="color-circle" data-color="#67E8F9" style="background-color: #67E8F9;"></div>
+                <div class="color-circle" data-color="#FBCFE8" style="background-color: #FBCFE8;"></div>
+            </div>
+            
+            <!-- Submit button to proceed to the next step -->
+            <div class="button-one">
+                <button type="submit" class="mob-button">Next ></button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<!-- Linking external JavaScript files for functionality -->
+<script src="JS/global.js"></script>
+<script src="JS/landing.js"></script>
+<script src="JS/cookies.js"></script>
+<script src="JS/color.js"></script>
+
+</body>
+</html>

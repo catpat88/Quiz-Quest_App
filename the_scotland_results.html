@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Quest Scottish History Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rampart+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/quiz.css">
+</head>
+<body class="hide-starry-mobile">
+<header>
+    <nav class="grey-nav">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <img class="avatar" src="" alt="Selected avatar">
+                <div class="welcome"></div>
+            </div>
+            <div class="nav-right">
+                <div class="date-time"></div>
+                <div class="quiz-compl-no"></div>
+                <div class="points-no">Score: 0 / 30</div>
+            </div>
+        </div>
+    </nav>
+    <div class="logo-container-left">
+        <img class="logo-c" src="CSS/images/qqlogo.png" alt="quiz quest logo">
+        <div class="starry-container">
+            <div class="starry-par"><h1>Complete all quizzes to wake up Starry!</h1></div>
+            <div class="starry-image"><img src="CSS/images/sleeping_starry.png" class="floating-starry" alt="Starry quiz cartoon character sleeping">
+            </div>
+        </div>
+    </div>
+</header>
+    <main class="main-menu-outer">
+        <div class="quiz-container-background">
+            <div class="results-container">
+                <h1>Quiz Results</h1>
+                <div id="quiz-result" class="result-message"></div>
+                <div id="quiz-feedback"></div>
+                <div class="go-back">
+                    <button onclick="goBackToMenu()">Back to Main Menu</button>
+                </div>
+            </div>   
+        </div>
+        
+    </main>
+    <script src="JS/avatar.js"></script>
+    <script src="JS/global.js"></script>
+    <script src="JS/cookies.js"></script>
+    <script src="JS/color.js"></script>
+    <script src="JS/quiz.js"></script>
+    <script src="JS/results.js"></script>
+
+    
+</body>
+</html>

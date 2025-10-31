@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the page, including character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Quest Main Menu</title>
+    
+    <!-- Linking to Google Fonts for custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rampart+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    
+    <!-- Linking to external CSS file for styling -->
+    <link rel="stylesheet" href="CSS/quiz.css">
+</head>
+<body>
+
+<header>
+    <!-- Navigation bar with left and right sections -->
+    <nav class="grey-nav">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <!-- Avatar image (empty source for now) and a div for the welcome message -->
+                <img class="avatar" src="" alt="Selected avatar">
+                <div class="welcome"></div>
+            </div>
+            <div class="nav-right">
+                <!-- Date and time display, quizzes completed, and score -->
+                <div class="date-time"></div>
+                <div class="quiz-compl-no"></div>
+                <div class="points-no">Score: 0 / 30</div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Logo container on the left side of the header -->
+    <div class="logo-container-left">
+        <!-- Quiz Quest logo -->
+        <img class="logo-c" src="CSS/images/qqlogo.png" alt="quiz quest logo">
+        
+        <!-- Starry character and reset button -->
+        <div class="starry-container">
+            <div class="starry-par"><h1>Complete all quizzes to wake up Starry!</h1></div>
+            <div class="starry-image">
+                <!-- Sleeping Starry image (floating effect) -->
+                <img src="CSS/images/sleeping_starry.png" class="floating-starry" alt="Starry quiz cartoon character sleeping">
+                <!-- Reset quizzes button -->
+                <button class="reset-btn" id="resetQuizzesBtn">Reset Quizzes</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main-menu-outer">
+    <!-- Main quiz menu container -->
+    <div class="quiz-menu-container">
+        <!-- Grid of quiz options -->
+        <div class="quiz-rows-grid">
+            <!-- Each quiz is represented as a clickable box -->
+            <a href="the_numeracy_quiz.html" data-quiz="numeracy" id="quiz-numeracy" class="box">
+                <h2>Numeracy</h2>
+                <img src="CSS/images/maths-img.png" alt="maths icon">
+            </a>
+            <a href="the_literacy_quiz.html" data-quiz="literacy" id="quiz-literacy" class="box">
+                <h2>Literacy</h2>
+                <img src="CSS/images/literacy-img.png" alt="literacy icon">
+            </a>
+            <a href="the_health_quiz.html" data-quiz="health" id="quiz-health" class="box">
+                <h2>Health & Wellbeing</h2>
+                <img src="CSS/images/health-img.png" alt="health icon">
+            </a>
+            <a href="the_scotland_quiz.html" data-quiz="scotland" id="quiz-scotland" class="box">
+                <h2>Scottish History</h2>
+                <img src="CSS/images/scotland-img.png" alt="scotland icon">
+            </a>
+            <a href="the_social_quiz.html" data-quiz="social" id="quiz-social" class="box">
+                <h2>Social Awareness</h2>
+                <img src="CSS/images/friends-img.png" alt="social awareness icon">
+            </a>
+            <a href="the_solar_quiz.html" data-quiz="solar" id="quiz-solar" class="box">
+                <h2>Solar System</h2>
+                <img src="CSS/images/solar-img.png" alt="solar system icon">
+            </a>
+        </div>
+    </div>
+</main>
+
+<!-- JavaScript files for additional functionality -->
+<script src="JS/avatar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="JS/global.js"></script>
+<script src="JS/cookies.js"></script>
+<script src="JS/color.js"></script>
+
+</body>
+</html>
